@@ -1,1 +1,168 @@
-
+body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .profile-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 50px auto;
+            max-width: 900px;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        
+        .left-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            min-height: 100%;
+        }
+        
+        .right-section {
+            padding: 30px;
+        }
+        
+        .about-title {
+            color: #333;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .about-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        .info-item {
+            margin-bottom: 15px;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .info-value {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .skills-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: white;
+        }
+        
+        .skill-item {
+            margin-bottom: 20px;
+        }
+        
+        .skill-name {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .skill-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .skill-percentage {
+            font-size: 12px;
+            margin-left: auto;
+            font-weight: 600;
+        }
+        
+        .progress {
+            height: 8px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            border-radius: 10px;
+            transition: width 1.5s ease-in-out;
+            animation: progressAnimation 2s ease-out;
+        }
+        
+        @keyframes progressAnimation {
+            from { width: 0%; }
+            to { width: var(--progress-width); }
+        }
+        
+        .react-bar { 
+            background: linear-gradient(90deg, #61dafb, #21a9c7); 
+            --progress-width: 95%;
+            width: 95%;
+        }
+        
+        .nodejs-bar { 
+            background: linear-gradient(90deg, #68a063, #3e7b3e); 
+            --progress-width: 90%;
+            width: 90%;
+        }
+        
+        .python-bar { 
+            background: linear-gradient(90deg, #3776ab, #ffd43b); 
+            --progress-width: 88%;
+            width: 88%;
+        }
+        
+        .aws-bar { 
+            background: linear-gradient(90deg, #ff9900, #232f3e); 
+            --progress-width: 85%;
+            width: 85%;
+        }
+        
+        .about-text {
+            line-height: 1.6;
+            color: #666;
+            font-size: 15px;
+        }
+        
+        .tech-badge {
+            background: #667eea;
+            color: white;
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-card {
+                margin: 20px;
+            }
+            
+            .left-section, .right-section {
+                padding: 20px;
+            }
+        }
