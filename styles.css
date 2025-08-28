@@ -1,7 +1,6 @@
 body {
-            background-color: #f8f9fa;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+	background-color: #f8f9fa;
+}
         
         .profile-card {
             background: white;
@@ -15,7 +14,7 @@ body {
         .profile-image {
             width: 150px;
             height: 150px;
-            border-radius: 10px;
+            border-radius: 100px;
             object-fit: cover;
             margin-bottom: 20px;
         }
